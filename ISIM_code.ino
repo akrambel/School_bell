@@ -1,4 +1,5 @@
 /*Sonette_ISIM*/
+// 53s
 #include<Wire.h>
 #include <DS3231.h>
 #include <LiquidCrystal_I2C.h>
@@ -10,9 +11,9 @@ void setup() {
   
    Serial.begin(115200);
    rtc.begin();
-     //rtc.setDOW(SATURDAY);    
-     //rtc.setTime(0, 2, 20);    
-     //rtc.setDate(11, 3, 2023); 
+    // rtc.setDOW(FRIDAY);    
+    // rtc.setTime(18, 36, 00);    
+    // rtc.setDate(22, 11, 2024); 
     lcd.begin(16,2);
     pinMode(5, OUTPUT);
 pinMode(BUTTON_PIN, INPUT_PULLUP);       
